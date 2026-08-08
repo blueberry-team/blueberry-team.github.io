@@ -18,6 +18,15 @@
   nav.lang button { font: inherit; font-size: 0.9em; padding: 6px 14px; margin-right: 6px; border: 1px solid #ddd; background: #fff; border-radius: 999px; cursor: pointer; color: #555; }
   nav.lang button[aria-current="true"] { background: #4a5cff; border-color: #4a5cff; color: #fff; }
   section[hidden] { display: none; }
+  /* 폰에서 표가 열마다 한 글자씩 쪼개진다. 앱의 설정에서 폰으로 여는 페이지라
+     좁을 때는 표에 최소 너비를 주고 표 안에서만 가로로 넘긴다.
+     (페이지 본문 자체는 가로 스크롤되지 않는다) */
+  @media (max-width: 600px) {
+    table { display: block; overflow-x: auto; min-width: 0; }
+    table tbody, table tr { display: table; width: 100%; min-width: 460px; }
+    th, td { font-size: 0.88em; padding: 6px 8px; }
+    body { margin: 24px auto; }
+  }
 </style>
 </head>
 <body>
