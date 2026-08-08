@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>You're So Weird 개인정보처리방침</title>
+<title>Artists 개인정보처리방침</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif; line-height: 1.7; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; }
   h1 { font-size: 1.6em; }
@@ -17,25 +17,28 @@
 </style>
 </head>
 <body>
-<h1>You're So Weird 개인정보처리방침</h1>
-<p>시행일자: 2026년 8월 2일</p>
-<p>블루베리스토어(이하 "회사")는 모바일 애플리케이션 You're So Weird(손그림 영어단어, 이하 "서비스")를 운영하면서 이용자의 개인정보를 아래와 같이 처리합니다.</p>
+<h1>Artists 개인정보처리방침</h1>
+<p>시행일자: 2026년 8월 8일 (이전 시행일: 2026년 8월 2일)</p>
+<p>블루베리스토어(이하 "회사")는 모바일 애플리케이션 Artists(그림으로 외우는 영단어, 구 You're So Weird, 이하 "서비스")를 운영하면서 이용자의 개인정보를 아래와 같이 처리합니다.</p>
 
 <div class="note">
-※ 서비스는 <strong>회원가입을 받지 않습니다.</strong> 이름·이메일·전화번호·생년월일 등 이용자를 특정할 수 있는 정보를 일절 수집하지 않으며, 소셜 로그인도 사용하지 않습니다.
+※ 서비스는 <strong>로그인 없이 이용할 수 있습니다.</strong> 앱을 켜면 익명 계정이 자동으로 만들어지고, 이름·이메일·전화번호·생년월일을 받지 않습니다.<br>
+다만 <strong>익명 상태에서는 문제를 10개까지만 풀 수 있으며</strong>, 그 이후에도 계속 풀려면 Google 또는 Apple 계정으로 로그인해야 합니다. 이때에 한해 이메일 주소와 표시 이름을 받습니다. <strong>출제(그리기)는 로그인 없이도 계속할 수 있습니다.</strong><br>
+Apple 로그인에서 <strong>「나의 이메일 가리기」</strong>를 고르면 실제 이메일 대신 Apple이 만든 전달용 주소만 저장됩니다.
 </div>
 
 <h2>1. 수집하는 정보 항목</h2>
 <table>
 <tr><th>구분</th><th>항목</th><th>수집 방법</th></tr>
 <tr><td>익명 식별자</td><td>Firebase 익명 인증이 자동 발급하는 임의 문자열</td><td>앱 최초 실행 시 자동 생성</td></tr>
+<tr><td>계정 정보 <em>(로그인한 경우에만)</em></td><td>이메일 주소, 소셜 계정의 표시 이름</td><td>Google · Apple 로그인 시 해당 사업자로부터 전달</td></tr>
 <tr><td>표시 이름</td><td>문제에 함께 표시되는 닉네임</td><td>이용자가 직접 입력</td></tr>
 <tr><td>출제 콘텐츠</td><td>이용자가 그린 획의 좌표와 그린 시간, 선택한 단어</td><td>이용자가 직접 그림·선택</td></tr>
 <tr><td>학습 기록</td><td>푼 문제, 정답 여부, 시도 횟수</td><td>문제를 풀 때 자동 기록</td></tr>
 <tr><td>신고·차단 기록</td><td>신고한 문제와 사유, 차단한 이용자의 익명 식별자</td><td>이용자가 신고·차단할 때</td></tr>
 <tr><td>기기 언어</td><td>ko / ja / en 중 하나</td><td>기기 설정에서 자동 확인</td></tr>
 </table>
-<p>익명 식별자는 이용자의 실명·연락처 등 어떤 신원 정보와도 연결되지 않습니다. 표시 이름은 문제 옆에 보이는 값이므로 실명이나 연락처를 넣지 않도록 안내합니다.</p>
+<p>로그인하지 않은 이용자의 익명 식별자는 실명·연락처 등 어떤 신원 정보와도 연결되지 않습니다. 로그인하면 기존 익명 계정에 소셜 계정이 <strong>연결</strong>되므로 식별자는 그대로 유지되고, 그때부터 이메일 주소가 함께 보관됩니다. 표시 이름은 문제 옆에 보이는 값이므로 실명이나 연락처를 넣지 않도록 안내합니다.</p>
 
 <h2>2. 수집 및 이용 목적</h2>
 <ul>
@@ -54,7 +57,8 @@
 <p>회사는 이용자의 정보를 제3자에게 판매하거나 제공하지 않습니다. 다만 서비스 운영에 필요한 범위에서 아래에 처리를 위탁합니다.</p>
 <table>
 <tr><th>수탁자</th><th>위탁 업무</th></tr>
-<tr><td>Google LLC (Firebase Authentication, Cloud Firestore)</td><td>익명 인증, 데이터 저장 및 조회</td></tr>
+<tr><td>Google LLC (Firebase Authentication, Cloud Firestore)</td><td>익명 인증, 소셜 로그인 처리, 데이터 저장 및 조회</td></tr>
+<tr><td>Apple Inc. (Sign in with Apple)</td><td>Apple 계정 로그인 인증 <em>(로그인한 경우에만)</em></td></tr>
 </table>
 
 <h2>5. 국외 이전</h2>
