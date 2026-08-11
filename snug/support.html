@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snug : Study Room サポート / 지원 / Support</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", "Noto Sans KR", sans-serif; line-height: 1.7; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.2em; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; font-size: 0.95em; }
+  th { background: #f7f7f7; }
+  a { color: #4a5cff; }
+  .note { background: #fefce8; border-radius: 8px; padding: 12px 16px; font-size: 0.95em; }
+  footer { margin-top: 3em; color: #888; font-size: 0.85em; border-top: 1px solid #eee; padding-top: 1em; }
+  nav.lang { margin-bottom: 24px; }
+  nav.lang button { font: inherit; font-size: 0.9em; padding: 6px 14px; margin-right: 6px; border: 1px solid #ddd; background: #fff; border-radius: 999px; cursor: pointer; color: #555; }
+  nav.lang button[aria-current="true"] { background: #4a5cff; border-color: #4a5cff; color: #fff; }
+  section[hidden] { display: none; }
+  /* 폰에서 표가 열마다 한 글자씩 쪼개진다. 앱의 설정에서 폰으로 여는 페이지라
+     좁을 때는 표에 최소 너비를 주고 표 안에서만 가로로 넘긴다.
+     (페이지 본문 자체는 가로 스크롤되지 않는다) */
+  @media (max-width: 600px) {
+    table { display: block; overflow-x: auto; min-width: 0; }
+    table tbody, table tr { display: table; width: 100%; min-width: 460px; }
+    th, td { font-size: 0.88em; padding: 6px 8px; }
+    body { margin: 24px auto; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="lang">
+  <button type="button" data-lang="ja" aria-current="true">日本語</button>
+  <button type="button" data-lang="ko">한국어</button>
+  <button type="button" data-lang="en">English</button>
+</nav>
+
+<!-- ─────────────────────────── 日本語 ─────────────────────────── -->
+<section id="ja">
+<h1>Snug : Study Room サポート</h1>
+
+<div class="note">
+まずは <a href="#lang-ja" onclick="document.getElementById('faq-ja').scrollIntoView()">よくある質問</a> をご覧ください。解決しない場合は下の連絡先までお願いします。
+</div>
+
+<h2>お問い合わせ</h2>
+<table>
+<tr><th>メール</th><td><a href="mailto:sonjungwoo9@gmail.com">sonjungwoo9@gmail.com</a></td></tr>
+<tr><th>対応時間</th><td>平日 10:00–18:00 (JST) · 通常2〜3営業日以内に返信します</td></tr>
+<tr><th>対応言語</th><td>日本語 · 한국어 · English</td></tr>
+</table>
+
+<p>お問い合わせの際は、<strong>ご利用の機種・OSバージョン・アプリのバージョン</strong>を書き添えていただけると調査が早く進みます。アプリのバージョンは「設定」画面の一番下に表示されます。</p>
+
+<h2 id="faq-ja">よくある質問</h2>
+
+<h3>25分たっていないのに部屋を出ました。記録は残りますか</h3>
+<p>残ります。集中時間に<strong>実際にいた分だけ</strong>記録されます。10分いたなら10分です。ただし1分未満は記録されません。</p>
+
+<h3>休憩の5分だけ入るとどうなりますか</h3>
+<p>記録は増えません。集中時間にいた分だけを数えているためです。</p>
+
+<h3>話しかけたいのですが、どうすればいいですか</h3>
+<p>集中中は発言する手段がありません。休憩の5分だけ、決められたあいさつを部屋全体に送れます。自由入力・1対1のやりとり・友だち追加はありません。</p>
+
+<h3>不快な相手がいます</h3>
+<p>相手をタップして「通報」を選んでください。通報と同時にブロックされ、その相手の発言はあなたの画面に表示されなくなります。</p>
+
+<h3>機種変更しても記録を引き継げますか</h3>
+<p>「設定 → 記録を引き継ぐ」で Google または Apple アカウントを連携してください。連携しない場合、アプリを削除すると記録は失われます。</p>
+
+<h3>ニックネームを自分で決めたいです</h3>
+<p>できません。ニックネームは自動で組み合わせて作られます。「引き直す」で別の組み合わせに変えられます。自由入力を置かないことで、不適切な表示名が生まれないようにしています。</p>
+
+<h3>アカウントを削除したい</h3>
+<p><a href="./delete-account.html">アカウント削除のご案内</a>をご覧ください。アプリ内の「設定 → アカウント削除」からいつでも削除できます。</p>
+
+<h2>関連リンク</h2>
+<ul>
+<li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
+<li><a href="./terms.html">利用規約</a></li>
+<li><a href="./delete-account.html">アカウント削除</a></li>
+</ul>
+</section>
+
+<!-- ─────────────────────────── 한국어 ─────────────────────────── -->
+<section id="ko" hidden>
+<h1>Snug : Study Room 지원</h1>
+
+<div class="note">
+먼저 아래 <a href="#lang-ko" onclick="document.getElementById('faq-ko').scrollIntoView()">자주 묻는 질문</a>을 확인해 주세요. 해결되지 않으면 아래 연락처로 문의해 주세요.
+</div>
+
+<h2>문의</h2>
+<table>
+<tr><th>이메일</th><td><a href="mailto:sonjungwoo9@gmail.com">sonjungwoo9@gmail.com</a></td></tr>
+<tr><th>응답 시간</th><td>평일 10:00–18:00 (JST) · 보통 2~3 영업일 안에 답변드립니다</td></tr>
+<tr><th>지원 언어</th><td>日本語 · 한국어 · English</td></tr>
+</table>
+
+<p>문의하실 때 <strong>기기 모델·OS 버전·앱 버전</strong>을 함께 적어 주시면 훨씬 빨리 확인할 수 있습니다. 앱 버전은 설정 화면 맨 아래에 있습니다.</p>
+
+<h2 id="faq-ko">자주 묻는 질문</h2>
+
+<h3>25분을 못 채우고 나갔는데 기록이 남나요</h3>
+<p>남습니다. 집중 시간에 <strong>실제로 있던 만큼</strong> 기록됩니다. 10분 있었으면 10분입니다. 다만 1분 미만은 기록되지 않습니다.</p>
+
+<h3>휴식 5분만 들어가면 어떻게 되나요</h3>
+<p>기록이 늘지 않습니다. 집중 시간에 있던 만큼만 세기 때문입니다.</p>
+
+<h3>말을 걸고 싶은데 어떻게 하나요</h3>
+<p>집중 시간에는 말할 방법이 아예 없습니다. 쉬는 5분에만 정해진 인사말을 방 전체에 보낼 수 있습니다. 자유 입력, 1:1 대화, 친구 추가는 없습니다.</p>
+
+<h3>불쾌한 사람이 있습니다</h3>
+<p>그 사람을 눌러 「신고」를 선택하세요. 신고와 동시에 차단되며, 그 사람이 보낸 것은 내 화면에 더 이상 보이지 않습니다.</p>
+
+<h3>기기를 바꿔도 기록을 이어받을 수 있나요</h3>
+<p>「설정 → 기록 이어가기」에서 Google 또는 Apple 계정을 연결해 주세요. 연결하지 않으면 앱을 지웠을 때 기록이 사라집니다.</p>
+
+<h3>닉네임을 직접 정하고 싶습니다</h3>
+<p>불가능합니다. 닉네임은 자동으로 조합되어 만들어집니다. 「다시 뽑기」로 다른 조합으로 바꿀 수 있습니다. 자유 입력을 두지 않아 부적절한 표시 이름이 생기지 않도록 하고 있습니다.</p>
+
+<h3>계정을 삭제하고 싶습니다</h3>
+<p><a href="./delete-account.html">계정 삭제 안내</a>를 참고해 주세요. 앱 안 「설정 → 계정 삭제」에서 언제든 삭제할 수 있습니다.</p>
+
+<h2>관련 링크</h2>
+<ul>
+<li><a href="./privacy-policy.html">개인정보처리방침</a></li>
+<li><a href="./terms.html">이용약관</a></li>
+<li><a href="./delete-account.html">계정 삭제</a></li>
+</ul>
+</section>
+
+<!-- ─────────────────────────── English ─────────────────────────── -->
+<section id="en" hidden>
+<h1>Snug : Study Room Support</h1>
+
+<div class="note">
+Please check the <a href="#lang-en" onclick="document.getElementById('faq-en').scrollIntoView()">FAQ</a> below first. If it does not help, contact us using the details below.
+</div>
+
+<h2>Contact</h2>
+<table>
+<tr><th>Email</th><td><a href="mailto:sonjungwoo9@gmail.com">sonjungwoo9@gmail.com</a></td></tr>
+<tr><th>Hours</th><td>Weekdays 10:00–18:00 (JST) · We usually reply within 2–3 business days</td></tr>
+<tr><th>Languages</th><td>日本語 · 한국어 · English</td></tr>
+</table>
+
+<p>Including your <strong>device model, OS version and app version</strong> helps us look into it much faster. The app version is at the bottom of the Settings screen.</p>
+
+<h2 id="faq-en">FAQ</h2>
+
+<h3>I left before the 25 minutes were up. Is my time recorded?</h3>
+<p>Yes. You are credited for <strong>the time you were actually present</strong> during focus. Ten minutes present means ten minutes recorded. Anything under a minute is not counted.</p>
+
+<h3>What if I only join for the 5-minute break?</h3>
+<p>Nothing is recorded. Only time spent during focus counts.</p>
+
+<h3>How do I talk to someone?</h3>
+<p>During focus there is no way to say anything at all. Only in the 5-minute break can you send a set greeting to the whole room. There is no free text, no one-on-one contact and no friend requests.</p>
+
+<h3>Someone is bothering me</h3>
+<p>Tap that person and choose "Report". Reporting also blocks them, and nothing they send will appear on your screen again.</p>
+
+<h3>Can I keep my record on a new device?</h3>
+<p>Go to Settings → Carry your record and link a Google or Apple account. Without linking, deleting the app also deletes your record.</p>
+
+<h3>Can I choose my own nickname?</h3>
+<p>No. Nicknames are generated by combining set words. You can press "Reroll" for a different combination. Having no free text means no inappropriate display names can appear.</p>
+
+<h3>I want to delete my account</h3>
+<p>See <a href="./delete-account.html">Delete your account</a>. You can delete it any time from Settings → Delete account in the app.</p>
+
+<h2>Related</h2>
+<ul>
+<li><a href="./privacy-policy.html">Privacy Policy</a></li>
+<li><a href="./terms.html">Terms of Service</a></li>
+<li><a href="./delete-account.html">Delete account</a></li>
+</ul>
+</section>
+
+<footer>
+BLUEBERRY STORE | 대표자 손정우 | 사업자등록번호 705-28-01729 | 대구광역시 서구 서대구로 25
+</footer>
+
+<script>
+// 언어 전환. 첫 방문은 브라우저 언어를 따르고, 모르는 언어면 일본어로 둔다.
+(function () {
+  var langs = ['ja', 'ko', 'en'];
+  var buttons = document.querySelectorAll('nav.lang button');
+
+  function show(lang) {
+    langs.forEach(function (l) {
+      document.getElementById(l).hidden = l !== lang;
+    });
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-current', String(b.dataset.lang === lang));
+    });
+    document.documentElement.lang = lang;
+    // 해시는 'lang-ja' 로 쓴다. '#ja' 로 쓰면 같은 이름의 섹션으로 스크롤돼
+    // 언어 전환 버튼이 화면 위로 밀려 올라간다.
+    if (location.hash !== '#lang-' + lang) {
+      history.replaceState(null, '', '#lang-' + lang);
+    }
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { show(b.dataset.lang); });
+  });
+
+  var wanted = location.hash.replace('#lang-', '');
+  if (langs.indexOf(wanted) < 0) {
+    wanted = (navigator.language || 'ja').slice(0, 2);
+  }
+  show(langs.indexOf(wanted) >= 0 ? wanted : 'ja');
+})();
+</script>
+</body>
+</html>
