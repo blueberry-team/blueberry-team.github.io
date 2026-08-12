@@ -55,8 +55,8 @@
 <tr><th>項目</th><th>内容</th><th>取得方法</th></tr>
 <tr><td>端末トークン</td><td>初回起動時にサーバーが発行する匿名の識別子。<strong>トークン本体はサーバーに保存せず、ハッシュ値（SHA-256）のみ</strong>を保存します。</td><td>自動生成</td></tr>
 <tr><td>ニックネーム</td><td>「しずかなペンギン」のように、あらかじめ用意した語を自動で組み合わせたもの。<strong>ご自身で入力することはできません。</strong></td><td>自動生成</td></tr>
-<tr><td>累計集中時間</td><td>25分の集中を完走した回数から算出した合計分数。</td><td>利用時</td></tr>
-<tr><td>集中記録</td><td>完走した各サイクルの開始時刻・分数・部屋のテーマ・部屋の種類。</td><td>利用時</td></tr>
+<tr><td>累計集中時間</td><td>集中時間に実際に在室した秒数の合計。</td><td>利用時</td></tr>
+<tr><td>集中記録</td><td>サイクルごとの開始時刻・在室秒数・部屋のテーマ・部屋の種類。</td><td>利用時</td></tr>
 <tr><td>プラットフォーム区分</td><td>android / ios の別。</td><td>利用時</td></tr>
 <tr><td>初回・最終アクセス日時</td><td>休眠判定と不正利用対策のため。</td><td>利用時</td></tr>
 <tr><td>連携アカウント識別子<br>（連携した場合のみ）</td><td>Google・Apple が発行する識別子(sub)の<strong>ハッシュ値のみ</strong>。<strong>メールアドレス・氏名・プロフィール画像は取得しません。</strong>連携は任意です。</td><td>連携時</td></tr>
@@ -129,8 +129,8 @@
 <tr><th>항목</th><th>내용</th><th>수집 방법</th></tr>
 <tr><td>기기 토큰</td><td>첫 실행 때 서버가 발급하는 익명 식별자. <strong>토큰 원문은 저장하지 않고 해시값(SHA-256)만</strong> 보관합니다.</td><td>자동 생성</td></tr>
 <tr><td>닉네임</td><td>미리 준비된 단어를 자동으로 조합한 것(예: しずかなペンギン). <strong>직접 입력할 수 없습니다.</strong></td><td>자동 생성</td></tr>
-<tr><td>누적 집중 시간</td><td>25분 집중을 완주한 횟수로 계산한 합계 분수.</td><td>이용 시</td></tr>
-<tr><td>집중 기록</td><td>완주한 사이클마다의 시작 시각·분수·방 컨셉·방 종류.</td><td>이용 시</td></tr>
+<tr><td>누적 집중 시간</td><td>집중 시간에 실제로 있던 초의 합계.</td><td>이용 시</td></tr>
+<tr><td>집중 기록</td><td>사이클마다의 시작 시각·머문 초·방 컨셉·방 종류.</td><td>이용 시</td></tr>
 <tr><td>플랫폼 구분</td><td>android / ios 구분.</td><td>이용 시</td></tr>
 <tr><td>최초·최종 접속 시각</td><td>휴면 판단과 부정 이용 대응 목적.</td><td>이용 시</td></tr>
 <tr><td>연결 계정 식별자<br>(연결한 경우만)</td><td>Google·Apple 이 발급하는 식별자(sub)의 <strong>해시값만</strong>. <strong>이메일·이름·프로필 사진을 받지 않습니다.</strong> 연결은 선택입니다.</td><td>연결 시</td></tr>
@@ -203,8 +203,8 @@ The Service <strong>works without signing in.</strong> We never ask for your nam
 <tr><th>Item</th><th>Detail</th><th>How</th></tr>
 <tr><td>Device token</td><td>An anonymous identifier issued by our server on first launch. <strong>We store only its SHA-256 hash</strong>, never the token itself.</td><td>Generated</td></tr>
 <tr><td>Nickname</td><td>Assembled automatically from a fixed word list (e.g. しずかなペンギン). <strong>You cannot type your own.</strong></td><td>Generated</td></tr>
-<tr><td>Total focus minutes</td><td>Derived from the number of 25-minute focus blocks you completed.</td><td>In use</td></tr>
-<tr><td>Focus records</td><td>Start time, minutes, room theme and room kind for each completed cycle.</td><td>In use</td></tr>
+<tr><td>Total focus time</td><td>The total number of seconds you were actually present during focus.</td><td>In use</td></tr>
+<tr><td>Focus records</td><td>Start time, seconds present, room theme and room kind for each cycle.</td><td>In use</td></tr>
 <tr><td>Platform</td><td>android or ios.</td><td>In use</td></tr>
 <tr><td>First / last seen</td><td>Used to detect dormant accounts and abuse.</td><td>In use</td></tr>
 <tr><td>Linked account id<br>(only if you link)</td><td>A <strong>hash of the identifier (sub)</strong> issued by Google or Apple. <strong>No email address, name or profile picture is collected.</strong> Linking is optional.</td><td>On linking</td></tr>
