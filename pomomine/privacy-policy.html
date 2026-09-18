@@ -40,7 +40,7 @@
 <h1>폰 대신 곡괭이 개인정보처리방침</h1>
 <p>시행일자: 2026년 9월 16일</p>
 <div class="note">
-<strong>한 줄 요약 — 이름·이메일 같은 개인정보는 받지 않습니다.</strong> 앱 운영에 필요한 기기 정보와 이용 통계만 보냅니다.
+<strong>한 줄 요약 — 로그인을 하지 않으면 이름·이메일을 받지 않습니다.</strong> 로그인하면 구글·애플이 알려 주는 이름·이메일·계정 식별자를 받아 구매를 계정에 묶습니다. 그 밖에는 앱 운영에 필요한 기기 정보와 이용 통계만 보냅니다.
 </div>
 <p>블루베리스토어(이하 "회사")는 모바일 애플리케이션 「폰 대신 곡괭이」(이하 "서비스")를 운영하면서 이용자의 개인정보를 아래와 같이 처리합니다.</p>
 
@@ -55,6 +55,7 @@
 <tr><td>기기 정보</td><td>기기 종류(Android·iOS), 앱 버전, OS 버전, 기기 언어 설정</td></tr>
 <tr><td>접속 국가</td><td>접속한 네트워크로 판단한 국가 코드만 남기며, <strong>IP 주소는 저장하지 않습니다.</strong></td></tr>
 <tr><td>결제 정보</td><td>스토어가 발급한 구매 확인값(구매 토큰 또는 거래 번호), 상품 이름, 앱에 표시된 가격</td></tr>
+<tr><td>문의 내용</td><td>설정의 문의하기로 보낸 내용과 종류(환불·오류 신고·건의·기타). 답장 받을 메일 주소와 주문번호는 적으신 경우에만 받습니다. 답변에만 쓰고, 처리가 끝나면 지웁니다.</td></tr>
 </table>
 
 <h2>3. 이용 통계 (Firebase 애널리틱스)</h2>
@@ -62,7 +63,9 @@
 <p>Google 의 처리 내용: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
 
 <h2>4. 계정</h2>
-<p>회원가입과 로그인이 없습니다. 이름·이메일·전화번호를 묻지 않습니다.</p>
+<p>로그인은 <strong>선택</strong>입니다. 로그인하지 않아도 모든 기능을 쓸 수 있고, 그때는 이름·이메일을 받지 않습니다.</p>
+<p>구글 또는 애플로 로그인하면 그 회사가 알려 주는 <strong>이름·이메일 주소·계정 식별자</strong>를 받습니다. 폰을 바꿔도 산 것을 되찾게 하려고 쓰며, 계정 식별자와 구매 기록을 회사 서버에 저장합니다. 로그인 처리에는 Google Firebase Authentication 을 씁니다.</p>
+<p>앱의 <strong>설정 → 계정 → 계정 삭제</strong>에서 직접 지울 수 있습니다. 지우면 계정과 구매 연결이 함께 사라집니다. 자세한 방법은 <a href="delete-account.html">계정 삭제 안내</a>를 보세요.</p>
 
 <h2>5. 광고</h2>
 <p>이 앱은 Google AdMob 의 보상형 광고를 씁니다. 광고는 이용자가 직접 버튼을 눌렀을 때만 표시됩니다. 광고를 제공하는 과정에서 Google 은 광고 식별자와 기기 정보를 처리할 수 있습니다.</p>
@@ -103,12 +106,15 @@
 
 <h2>2. Sent to the developer's server</h2>
 <p>When the app is first opened, and once a day after that, it sends a random install ID created by the app (not linked to your name, phone number or advertising ID; it changes if you reinstall), the device type (Android/iOS), app version, OS version, device language, and the country code of your network. <strong>IP addresses are not stored.</strong> When you buy something, it also sends the store's purchase token or transaction ID, the product name and the price shown in the app. These are used only to count installs and daily use, and to confirm purchases with the store.</p>
+<p>If you write to us through <strong>Settings → Contact us</strong>, we also receive your message and the kind of enquiry (refund, problem, suggestion, other). The email address for our reply and the order number are sent only if you fill them in. We use them to answer you and delete them once the matter is closed.</p>
 
 <h2>3. Usage statistics (Firebase Analytics)</h2>
 <p>The app uses Google Firebase Analytics to see which features are used. In-app actions (starting or finishing a session, breaks, village stages) together with device type, OS, app version and approximate region are sent to Google. See <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
 
 <h2>4. Accounts</h2>
-<p>There is no sign-up and no login. The app never asks for your name, email or phone number.</p>
+<p>Signing in is <strong>optional</strong>. Everything works without it, and in that case we never receive your name or email.</p>
+<p>If you sign in with Google or Apple, we receive the <strong>name, email address and account identifier</strong> that they pass to us. We use this so that your purchase follows you to a new phone, and we store the account identifier and the purchase record on our server. Sign-in is handled by Google Firebase Authentication.</p>
+<p>You can delete it yourself in <strong>Settings → Account → Delete account</strong>. Deleting removes the account and the link to your purchase. See <a href="delete-account.html">how to delete your account</a>.</p>
 
 <h2>5. Ads</h2>
 <p>The app shows Google AdMob rewarded ads, and only when you tap the button yourself. In serving ads, Google may process your advertising identifier and device information. See <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. You can reset the identifier or turn off personalised ads in your device settings.</p>
@@ -142,12 +148,15 @@
 
 <h2>2. 開発者のサーバーに送るもの</h2>
 <p>初めて起動したときと、その後1日1回、アプリが作るランダムなインストールID（名前・電話番号・広告IDとは結びつかず、再インストールすると変わります）、端末の種類（Android・iOS）、アプリのバージョン、OSのバージョン、端末の言語設定、接続したネットワークの国コードを送ります。<strong>IPアドレスは保存しません。</strong>購入時は、ストアが発行した購入トークンまたは取引番号、商品名、アプリに表示された価格も送ります。インストール数・利用状況の集計と、購入がストアに実在するかの確認にだけ使います。</p>
+<p><strong>設定 → お問い合わせ</strong>からご連絡いただいた場合は、その内容と種類（返金・不具合・ご要望・その他）も受け取ります。返信用メールアドレスと注文番号は、ご記入いただいた場合のみ送られます。お返事のためだけに使い、対応が終われば削除します。</p>
 
 <h2>3. 利用統計（Firebase アナリティクス）</h2>
 <p>どの機能が使われているかを知るため Google Firebase アナリティクスを使います。採掘の開始・完了、休憩、村の段階などのアプリ内の操作と、端末の種類・OS・アプリのバージョン・おおよその地域が Google に送られます。詳しくは <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a> をご覧ください。</p>
 
 <h2>4. アカウント</h2>
-<p>登録もログインもありません。名前・メール・電話番号を尋ねません。</p>
+<p>ログインは<strong>任意</strong>です。ログインしなくてもすべての機能を使え、その場合は名前やメールを受け取りません。</p>
+<p>Google または Apple でログインすると、各社から渡される<strong>名前・メールアドレス・アカウント識別子</strong>を受け取ります。スマホを変えても購入したものを取り戻せるようにするためで、アカウント識別子と購入記録を当社サーバーに保存します。ログイン処理には Google Firebase Authentication を使います。</p>
+<p>アプリの<strong>設定 → アカウント → アカウント削除</strong>からご自身で削除できます。削除するとアカウントと購入のひもづけが消えます。詳しくは<a href="delete-account.html">アカウント削除のご案内</a>をご覧ください。</p>
 
 <h2>5. 広告</h2>
 <p>Google AdMob のリワード広告を使います。広告はご自身がボタンを押したときだけ表示されます。広告の配信にあたり、Google が広告識別子や端末情報を処理する場合があります。詳しくは <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a> をご覧ください。</p>
