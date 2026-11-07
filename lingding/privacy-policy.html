@@ -14,30 +14,39 @@
   a { color: #4a5cff; }
   .note { background: #fefce8; border-radius: 8px; padding: 12px 16px; font-size: 0.95em; }
   footer { margin-top: 3em; color: #888; font-size: 0.85em; border-top: 1px solid #eee; padding-top: 1em; }
+  body { word-break: keep-all; overflow-wrap: anywhere; }
   @media (max-width: 600px) {
-    table { display: block; overflow-x: auto; }
-    th, td { font-size: 0.88em; padding: 6px 8px; }
     body { margin: 24px auto; }
+    table, tbody, tr, td { display: block; width: 100%; box-sizing: border-box; }
+    table { border: 0; }
+    tr:first-child { display: none; }
+    tr { border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; padding: 4px 0; }
+    td { border: 0; padding: 4px 12px; font-size: 0.92em; }
+    td::before { content: attr(data-label); display: block; font-size: 0.85em; color: #888; }
   }
+  html.app h1 { display: none; }
+  html.app body { margin-top: 16px; }
 </style>
+<script>if (/[?&]app=1/.test(location.search)) document.documentElement.classList.add('app');</script>
 </head>
 <body>
 <h1>Lingding 개인정보처리방침</h1>
-<p>시행일자: 2026년 11월 6일</p>
+<p>시행일자: 2026년 12월 7일</p>
+<p>한국어 · <a href="./privacy-policy-ja.html">日本語</a></p>
 <p>블루베리스토어(이하 "회사")는 모바일 애플리케이션 Lingding(링딩, 단어 대전으로 만나는 언어교환 서비스, 이하 "서비스")을 운영하면서 이용자의 개인정보를 아래와 같이 처리합니다.</p>
 <p><a href="./terms.html">이용약관</a> · <a href="./location-terms.html">위치기반서비스 이용약관</a> · <a href="./delete-account.html">계정 삭제 안내</a></p>
 
 <h2>1. 수집하는 개인정보 항목</h2>
 <table>
   <tr><th>구분</th><th>수집 항목</th><th>수집 방법</th></tr>
-  <tr><td>회원가입·로그인</td><td>소셜 로그인 식별자(Google·Apple·Kakao·LINE), 이메일 주소, 닉네임</td><td>소셜 로그인 제공자로부터 전달받거나 이메일 로그인 시 이용자가 입력</td></tr>
-  <tr><td>프로필</td><td>프로필 사진, 성별, 생년월일, 국가·도시, 모국어·사용 가능 언어·학습 언어, 자기소개, MBTI, 관심사, 성격 특성</td><td>이용자가 직접 입력(일부 항목은 선택)</td></tr>
-  <tr><td>지역</td><td>국가와 광역 지역(일본 도도부현, 한국 시도)을 나타내는 지역 코드. 좌표(위도·경도)는 저장하지 않음</td><td>위치정보 수집에 동의하고 위치 측정 버튼을 누를 때 기기 안에서 변환해 지역 코드만 전송(<a href="./location-terms.html">위치기반서비스 이용약관</a>)</td></tr>
-  <tr><td>서비스 이용 기록</td><td>스터디북·수집 단어, 대전 전적, 포인트·코인·입장권·스탬프, 출석·미션, 친구·차단·신고 내역</td><td>서비스 이용 중 생성</td></tr>
-  <tr><td>이용자가 작성한 콘텐츠</td><td>게시글·사진·댓글, 채팅 메시지</td><td>이용자가 직접 작성</td></tr>
-  <tr><td>음성 대화</td><td>통화 품질 지표(연결 시간, 지연, 손실률, 네트워크 종류)</td><td>대전 중 음성 대화를 쓸 때 자동 수집</td></tr>
-  <tr><td>결제</td><td>스토어 거래 식별자, 구매 상품, 결제 금액·통화</td><td>Apple App Store·Google Play 결제 시 스토어로부터 전달받음</td></tr>
-  <tr><td>기기·앱 정보</td><td>푸시 알림 토큰, 설치 식별자, 플랫폼, 앱 버전, OS 버전, 언어·국가 설정, 오류 진단 정보, 광고 식별자</td><td>앱 이용 중 자동 수집</td></tr>
+  <tr><td data-label="구분">회원가입·로그인</td><td data-label="수집 항목">소셜 로그인 식별자(Google·Apple·Kakao·LINE), 이메일 주소, 닉네임</td><td data-label="수집 방법">소셜 로그인 제공자로부터 전달받거나 이메일 로그인 시 이용자가 입력</td></tr>
+  <tr><td data-label="구분">프로필</td><td data-label="수집 항목">프로필 사진, 성별, 생년월일, 국가·도시, 모국어·사용 가능 언어·학습 언어, 자기소개, MBTI, 관심사, 성격 특성</td><td data-label="수집 방법">이용자가 직접 입력(일부 항목은 선택)</td></tr>
+  <tr><td data-label="구분">지역</td><td data-label="수집 항목">국가와 광역 지역(일본 도도부현, 한국 시도)을 나타내는 지역 코드. 좌표(위도·경도)는 저장하지 않음</td><td data-label="수집 방법">위치정보 수집에 동의하고 위치 측정 버튼을 누를 때 기기 안에서 변환해 지역 코드만 전송(<a href="./location-terms.html">위치기반서비스 이용약관</a>)</td></tr>
+  <tr><td data-label="구분">서비스 이용 기록</td><td data-label="수집 항목">스터디북·수집 단어, 대전 전적, 포인트·코인·입장권·스탬프, 출석·미션, 친구·차단·신고 내역, 이용약관 동의와 알림 수신 동의 기록</td><td data-label="수집 방법">서비스 이용 중 생성</td></tr>
+  <tr><td data-label="구분">이용자가 작성한 콘텐츠</td><td data-label="수집 항목">게시글·사진·댓글, 채팅 메시지</td><td data-label="수집 방법">이용자가 직접 작성</td></tr>
+  <tr><td data-label="구분">음성 대화</td><td data-label="수집 항목">통화 품질 지표(연결 시간, 지연, 손실률, 네트워크 종류)</td><td data-label="수집 방법">대전 중 음성 대화를 쓸 때 자동 수집</td></tr>
+  <tr><td data-label="구분">결제</td><td data-label="수집 항목">스토어 거래 식별자, 구매 상품, 결제 금액·통화</td><td data-label="수집 방법">Apple App Store·Google Play 결제 시 스토어로부터 전달받음</td></tr>
+  <tr><td data-label="구분">기기·앱 정보</td><td data-label="수집 항목">푸시 알림 토큰, 설치 식별자, 플랫폼, 앱 버전, OS 버전, 언어·국가 설정, 오류 진단 정보, 광고 식별자</td><td data-label="수집 방법">앱 이용 중 자동 수집</td></tr>
 </table>
 <p class="note">※ 대전 중 음성은 상대방에게 실시간으로 전달되며 회사 서버에 녹음·저장하지 않습니다. 카메라로 사진이나 영상을 촬영하지 않습니다. 결제 카드 정보는 회사가 받지 않습니다.</p>
 
@@ -50,6 +59,7 @@
   <li>유료 상품(코인·입장권·패스 등) 구매 처리와 결제 중복 방지</li>
   <li>게시글·채팅의 신고 처리와 유해 콘텐츠 차단</li>
   <li>알림 발송, 서비스 안정성 확보, 오류 진단·개선</li>
+  <li>이벤트·혜택 알림 발송(수신에 동의한 이용자만. 설정에서 언제든지 철회 가능)</li>
   <li>광고 게재(보상형 광고)</li>
 </ul>
 
@@ -57,43 +67,43 @@
 <p>이용자가 계정을 삭제하면 회원 정보와 이용 기록을 지체 없이 파기합니다. 다만 아래 정보는 정해진 목적과 기간 동안 보관합니다.</p>
 <table>
   <tr><th>보관 정보</th><th>사유</th><th>기간</th></tr>
-  <tr><td>결제·환불 기록</td><td>전자상거래 등에서의 소비자보호에 관한 법률</td><td>5년</td></tr>
-  <tr><td>위치정보 수집·이용·제공사실 확인자료</td><td>위치정보의 보호 및 이용 등에 관한 법률 제16조 제2항</td><td>6개월(동의 철회·계정 삭제 시 즉시 파기)</td></tr>
-  <tr><td>소비자 불만·분쟁 처리 기록</td><td>전자상거래 등에서의 소비자보호에 관한 법률</td><td>3년</td></tr>
-  <tr><td>개인을 식별할 수 없게 익명 처리한 대전 기록·신고 기록</td><td>상대방의 전적 유지, 처리 중인 신고의 완료, 결제 중복 방지</td><td>목적 달성 시까지</td></tr>
+  <tr><td data-label="보관 정보">결제·환불 기록</td><td data-label="사유">전자상거래 등에서의 소비자보호에 관한 법률</td><td data-label="기간">5년</td></tr>
+  <tr><td data-label="보관 정보">위치정보 수집·이용·제공사실 확인자료</td><td data-label="사유">위치정보의 보호 및 이용 등에 관한 법률 제16조 제2항</td><td data-label="기간">6개월(동의 철회·계정 삭제 시 즉시 파기)</td></tr>
+  <tr><td data-label="보관 정보">소비자 불만·분쟁 처리 기록</td><td data-label="사유">전자상거래 등에서의 소비자보호에 관한 법률</td><td data-label="기간">3년</td></tr>
+  <tr><td data-label="보관 정보">개인을 식별할 수 없게 익명 처리한 대전 기록·신고 기록</td><td data-label="사유">상대방의 전적 유지, 처리 중인 신고의 완료, 결제 중복 방지</td><td data-label="기간">목적 달성 시까지</td></tr>
 </table>
 
 <h2>4. 개인정보의 처리위탁 및 제3자 제공</h2>
 <p>회사는 이용자의 개인정보를 판매하지 않습니다. 서비스 제공을 위해 아래와 같이 업무를 위탁합니다.</p>
 <table>
   <tr><th>수탁업체</th><th>위탁 업무</th></tr>
-  <tr><td>Amazon Web Services, Inc.</td><td>서버·데이터베이스 운영(일본 도쿄 리전)</td></tr>
-  <tr><td>Cloudflare, Inc.</td><td>이미지 저장, 네트워크 전송, 음성 대화 중계</td></tr>
-  <tr><td>Google LLC</td><td>로그인 인증(Firebase Authentication), 오류 진단(Crashlytics), 푸시 알림(Firebase Cloud Messaging), 게시글 번역(Cloud Translation), 광고(AdMob), Google Play 결제</td></tr>
-  <tr><td>Apple Inc.</td><td>Apple 로그인, App Store 결제</td></tr>
-  <tr><td>Kakao Corp., LINE Corporation</td><td>소셜 로그인 인증</td></tr>
-  <tr><td>OpenAI, L.L.C.</td><td>게시글·채팅 메시지의 유해 콘텐츠 자동 검사</td></tr>
-  <tr><td>Resend, Inc.</td><td>이메일 로그인 인증 코드 발송</td></tr>
+  <tr><td data-label="수탁업체">Amazon Web Services, Inc.</td><td data-label="위탁 업무">서버·데이터베이스 운영(일본 도쿄 리전)</td></tr>
+  <tr><td data-label="수탁업체">Cloudflare, Inc.</td><td data-label="위탁 업무">이미지 저장, 네트워크 전송, 음성 대화 중계</td></tr>
+  <tr><td data-label="수탁업체">Google LLC</td><td data-label="위탁 업무">로그인 인증(Firebase Authentication), 오류 진단(Crashlytics), 푸시 알림(Firebase Cloud Messaging), 게시글 번역(Cloud Translation), 광고(AdMob), Google Play 결제</td></tr>
+  <tr><td data-label="수탁업체">Apple Inc.</td><td data-label="위탁 업무">Apple 로그인, App Store 결제</td></tr>
+  <tr><td data-label="수탁업체">Kakao Corp., LINE Corporation</td><td data-label="위탁 업무">소셜 로그인 인증</td></tr>
+  <tr><td data-label="수탁업체">OpenAI, L.L.C.</td><td data-label="위탁 업무">게시글·채팅 메시지의 유해 콘텐츠 자동 검사</td></tr>
+  <tr><td data-label="수탁업체">Resend, Inc.</td><td data-label="위탁 업무">이메일 로그인 인증 코드 발송</td></tr>
 </table>
 <p>게시글·프로필·닉네임 등 이용자가 공개한 정보는 서비스의 다른 이용자에게 보입니다. 대전 상대에게는 닉네임, 프로필 사진, 국가·도시, 학습 언어, 전적이 보입니다.</p>
 
 <h2>5. 개인정보의 국외 이전</h2>
 <table>
   <tr><th>이전받는 자</th><th>이전 국가</th><th>이전 항목</th><th>이전 시기·방법</th></tr>
-  <tr><td>Amazon Web Services, Inc.</td><td>일본</td><td>1항의 전 항목</td><td>서비스 이용 시 네트워크로 전송</td></tr>
-  <tr><td>Cloudflare, Inc.</td><td>미국 등</td><td>프로필·게시글 사진, 네트워크 전송 정보</td><td>사진 업로드·서비스 접속 시</td></tr>
-  <tr><td>Google LLC</td><td>미국</td><td>로그인 인증 정보, 오류 진단 정보, 푸시 토큰, 번역 대상 게시글, 광고 식별자</td><td>해당 기능 이용 시</td></tr>
-  <tr><td>OpenAI, L.L.C.</td><td>미국</td><td>검사 대상 게시글의 글과 사진, 채팅 메시지의 글</td><td>게시글 작성·채팅 메시지 전송 시</td></tr>
-  <tr><td>Resend, Inc.</td><td>미국</td><td>이메일 주소</td><td>이메일 로그인 인증 코드 발송 시</td></tr>
+  <tr><td data-label="이전받는 자">Amazon Web Services, Inc.</td><td data-label="이전 국가">일본</td><td data-label="이전 항목">1항의 전 항목</td><td data-label="이전 시기·방법">서비스 이용 시 네트워크로 전송</td></tr>
+  <tr><td data-label="이전받는 자">Cloudflare, Inc.</td><td data-label="이전 국가">미국 등</td><td data-label="이전 항목">프로필·게시글 사진, 네트워크 전송 정보</td><td data-label="이전 시기·방법">사진 업로드·서비스 접속 시</td></tr>
+  <tr><td data-label="이전받는 자">Google LLC</td><td data-label="이전 국가">미국</td><td data-label="이전 항목">로그인 인증 정보, 오류 진단 정보, 푸시 토큰, 번역 대상 게시글, 광고 식별자</td><td data-label="이전 시기·방법">해당 기능 이용 시</td></tr>
+  <tr><td data-label="이전받는 자">OpenAI, L.L.C.</td><td data-label="이전 국가">미국</td><td data-label="이전 항목">검사 대상 게시글의 글과 사진, 채팅 메시지의 글</td><td data-label="이전 시기·방법">게시글 작성·채팅 메시지 전송 시</td></tr>
+  <tr><td data-label="이전받는 자">Resend, Inc.</td><td data-label="이전 국가">미국</td><td data-label="이전 항목">이메일 주소</td><td data-label="이전 시기·방법">이메일 로그인 인증 코드 발송 시</td></tr>
 </table>
 
 <h2>6. 기기 권한</h2>
 <table>
   <tr><th>권한</th><th>용도</th><th>필수 여부</th></tr>
-  <tr><td>마이크</td><td>대전 상대와의 음성 대화</td><td>선택</td></tr>
-  <tr><td>위치</td><td>가입 단계와 설정에서 지역 등록</td><td>선택</td></tr>
-  <tr><td>사진</td><td>프로필 사진·게시글 사진 올리기</td><td>선택</td></tr>
-  <tr><td>알림</td><td>대전 초대·채팅·친구 요청 알림</td><td>선택</td></tr>
+  <tr><td data-label="권한">마이크</td><td data-label="용도">대전 상대와의 음성 대화</td><td data-label="필수 여부">선택</td></tr>
+  <tr><td data-label="권한">위치</td><td data-label="용도">가입 단계와 설정에서 지역 등록</td><td data-label="필수 여부">선택</td></tr>
+  <tr><td data-label="권한">사진</td><td data-label="용도">프로필 사진·게시글 사진 올리기</td><td data-label="필수 여부">선택</td></tr>
+  <tr><td data-label="권한">알림</td><td data-label="용도">대전 초대·채팅·친구 요청 알림</td><td data-label="필수 여부">선택</td></tr>
 </table>
 <p>선택 권한은 허용하지 않아도 해당 기능 외의 서비스를 이용할 수 있습니다.</p>
 
